@@ -7,12 +7,16 @@ function getIt(){
 
 function frameIt(){
   $('img').on("load", function(){
-    addClass('.tasty')
+    
   })
 }
 
 function pressIt(){
-
+  $('input').on("keydown", function(key){
+    if(key === 71){
+      alert("You've pressed the 'G' key!")
+    }
+  })
 }
 
 function submitIt(){
